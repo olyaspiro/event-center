@@ -1,0 +1,139 @@
+html, body {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+    
+    main {
+    flex: 1;
+    }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #312b2b;
+    padding: 20px 20px;
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: ivory
+  }
+  
+  .logo:hover {
+    color: #ff6600; 
+  }
+  
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+  }
+  
+  nav ul li a {
+    color: ivory;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .events, .menu, .location, .contact {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: ivory;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .events:hover, .menu:hover, .location:hover, .contact:hover {
+    font-weight: 900; /* Slightly bolder */
+    color: #ff6600; /* New color on hover */
+  }
+h1 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container to keep all categories in one row */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;  /* Prevents wrapping */
+    width: 100%;
+}
+
+/* Styling for each category */
+.menu-category {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 23%;  /* Slightly smaller to fit all 4 categories */
+    text-align: left;
+    border: 1px solid #ddd;
+    margin: 0;
+}
+/* Small Screens: Stack into a column */
+@media screen and (max-width: 600px) {
+    .menu-container {
+        flex-direction: column; /* Stack categories in a column */
+        align-items: center; /* Center align */
+    }
+    .event-grid {
+      grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+    }
+
+    .menu-category {
+        width: 90%; /* Full width for a stacked column layout */
+        margin-bottom: 20px; /* Add spacing */
+    }
+}
+
+/* Category headers */
+.menu-category h3 {
+    background-color: #ffb703;
+    color: white;
+    padding: 12px;
+    margin: -15px -15px 10px -15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+ footer {
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}

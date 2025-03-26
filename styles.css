@@ -1,0 +1,116 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+  
+  main {
+  flex: 1;
+  }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #312b2b;
+  padding: 20px 20px;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: ivory
+}
+
+.logo:hover {
+  color: #ff6600 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; 
+}
+nav ul li a {
+  color: ivory;
+  text-decoration: none;
+  font-size: 25px;
+}
+.events, .menu, .location, .contact {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: ivory;
+  transition: all 0.3s ease-in-out;
+}
+
+.events:hover, .menu:hover, .location:hover, .contact:hover {
+  font-weight: 900; /* Slightly bolder */
+  color: #ff6600; /* New color on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .event-grid {
+      grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+    }
+}
+    .container {  
+      background-image: url('the-weeknd.jpg');
+        position: relative;  
+        width: 100%;  
+        height: 100vh;  
+    }
+  
+    .background-image {  
+        width: 100%;  
+        height: 100%;  
+        object-fit: cover;  
+        display: block;  
+    }
+
+    .welcome-text {  
+        position: absolute;  
+        top: 10%;  
+        left: 0;  
+        right: 0;  
+        text-align: center;  
+        font-size: 2em;  
+        font-weight: bold;  
+        color: white;  
+    }
+
+    .about-us-section {  
+        position: absolute;  
+        top: 40%;  
+        left: 0;  
+        right: 0;  
+        text-align: center;  
+        color: white;  
+    }
+
+    .about-us-title {  
+        font-size: 1.8em;  
+        font-weight: bold;  
+    }
+
+    .about-us-text {  
+        font-size: 1.2em;  
+        width: 60%;  
+        margin: 0 auto; /* Centers horizontally */  
+    }  
+    footer {
+      position: absolute; /* Positions footer relative to the container */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color: white;
+      padding: -10px;
+      text-align: center;
+  
+  }
